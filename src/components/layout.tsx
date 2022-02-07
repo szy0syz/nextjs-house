@@ -24,7 +24,7 @@ const Layout: FC<IProps> = ({ main }) => {
               <Link href="/houses/add">
                 <a>Add House</a>
               </Link>
-              <button onClick={() => {}}>Logout</button>
+              <button onClick={logout}>Logout</button>
             </>
           ) : (
             <Link href="/auth">
