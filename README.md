@@ -23,7 +23,7 @@
     {
       "legacy": true
     }
-  ],s
+  ],
   [
     "@babel/plugin-proposal-class-properties",
     {
