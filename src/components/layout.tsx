@@ -1,15 +1,14 @@
 import { FC, ReactNode } from "react";
 import Link from "next/link";
 import link from "next/link";
-// import { useAuth } from "src/auth/useAuth";
+import { useAuth } from "src/auth/useAuth";
 
 interface IProps {
   main: ReactNode;
 }
 
 const Layout: FC<IProps> = ({ main }) => {
-  const authenticated = false;
-  const logout = () => null;
+  const { authenticated, logout } = useAuth();
 
   return (
     <div className="mx-auto text-white bg-gray-900 max-w-screen-2xl">
