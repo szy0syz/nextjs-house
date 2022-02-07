@@ -93,3 +93,24 @@ export const AuthProvider: FunctionComponent = ({ children }) => {
   );
 };
 ```
+
+- `MapBox` vs `Leaflet`
+  - `Leaflet` 出生很早，但 `MapBox` 的 `API`/`Usage` 和前者差球不多嘛
+  - 两年前就申请了 `MapBox` 的账号直到现在才... 😂
+
+```ts
+<ReactMapGL
+  {...viewport}
+  width="100%"
+  height="calc(100vh - 64px)"
+  onViewportChange={setViewport}
+  ref={(instance) => (mapRef.current = instance)}
+  mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_TOKEN}
+  minZoom={8}
+  maxZoom={15}
+  mapStyle="mapbox://styles/leighhalliday/ckhjaksxg0x2v19s1ovps41ef"
+></ReactMapGL>
+```
+
+- Next.js 全栈项目的目录结构：
+  - 从目录结构可以看出，海王框架真的是野心大 🤔
